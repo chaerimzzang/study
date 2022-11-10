@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트 태그 활용</title>
+    <style>
+        table, th, td { 
+			border:1px solid gray;  /* 표의 테두리 - 1px 회색 실선 */
+			border-collapse:collapse;  /* 표 테두리와 셀 테두리 합치기 */
+		}
+		th, td {
+			width:100px;  /* 셀 너비 */
+			padding:5px;  /* 셀 패딩(테두리와 내용 사이의 여백) */
+		}
+		caption {
+			font-size:20px;  /* 표 설명글 글자 크기 */
+			margin:10px;  /* 표 설명글 주변 여백 */
+			font-weight:bold;  /* 표 설명글 글자 굵게 */
+		}
+    </style>
+</head>
+<body>
+    <h1>제주 이색 여행지</h1>
+    <h2>야오 ㅣ텐트를 닮은 건축물 "테쉬폰"</h2>
+    <p>아일랜드 출신 임피제 신부가 1954년 제주에 오면서 목장 숙소로 짓기 시작한 후
+        사료고장, 성당으로 활용됐습니다.</p>
+    <p>제주에서 점차 다른 지방으로 보급됐지만 현재 제주에만 건축물이 남아있는데,<br>
+    국내 근현대사 건축사의 한 페이지를 보여주는 가치를 지닌다고 전문가들은 평가합니다.</p>
+    <hr>
+    <h1>1박 2일 가족 여행 코스</h1>
+    <ul>
+        <li>1일차
+            <ol type="a">
+                <li>해녀박물관</li>
+                <li>낚시체험</li>
+            </ol>
+        </li>
+        <li>2일차
+            <ol type="a" start="3">
+                <li>용눈이 오름</li>
+                <li>만장굴</li>
+                <li>카약체험</li>
+            </ol>
+        </li>
+    </ul>
+    <hr>
+    <h1>Who am I?</h1>
+    <p><mark>프론트엔드 웹 기술에</mark>관심이 많습니다.<br>
+    현재 제주의 한 시골 마을에서 코딩 중입니다.</p>
+    <hr>
+    <h1>Experience</h1>
+    <ul>
+        <li>프론트엔드 개발
+            <ul>
+                <li>업무 내용</li>
+                <li>업무 내용</li>
+                <li>업무 내용</li>
+            </ul>
+        </li>
+        <li>웹 디자인
+            <ul>
+                <li>업무 내용</li>
+                <li>업무 내용</li>
+            </ul>
+        </li>
+    </ul>   
+    <hr>
+    <h1>Skills</h1>
+    <hr>
+    <h1>Education</h1>
+    <hr>
+    <table>
+        <caption>
+            <strong>Modern Browser</strong>
+            <p>국내에서 자주 사용하는 모던 브라우저</p>
+        </caption>
+        <tr>
+            <th>이름</th>
+            <td></td>
+            <th>연락처</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>주소</th>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <th>자기소개</th>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+    <hr>
+    <table>
+        <caption>제주특별자치도 학교현황(2015.4.1 기준)</caption>
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>학교수</th>
+                <th>학급수</th>
+                <th>학생수</th>
+                <th>교원수</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>유치원</th>
+                <td>117</td>
+                <td>252</td>
+                <td>5,547</td>
+                <td>474</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>합계</th>
+                <td>304</td>
+                <td>3,437</td>
+                <td>86,954</td>
+                <td>6,111</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <h1>Education</h1>
+    <table>
+        <caption>학력 사항</caption>
+        <thead>
+            <th>출신학교</th>
+            <th>전공</th>
+            <th>기간</th>
+            <th>구분</th>
+        </thead>
+        <tbody>
+            <td>대학교</td>
+            <td>컴퓨터공학</td>
+            <td>2004.01~2007.02</td>
+            <td>졸업</td>
+        </tbody>
+    </table>
+    <hr>
+    <h1>이지스퍼블리싱 신입 사원 모집 공고</h1>
+    <p>IT 기획, 편집 부서에서 함께 할 신입 사원을 모집합니다.</p>
+    <ul>
+        <li>모집 직군: 편집 기획 부서</li>
+        <li>직무 내용: 도서 프로듀싱 업무 (신입 지원 가능)
+            <ul>
+                <li>도서 기획, 편집</li>
+                <li>도서 기획, 편집</li>
+            </ul>
+        </li>
+        <li>점수 마감일: 2016.03.03</li>
+    </ul>
+    <p>자세한 내용은 공지 게시판을 참고하세요.</p>
+    <hr>
+    <ul>
+        <li>커피 드립 순서 - 아라비아 숫자
+            <ol type="1">
+                <li>필터접기</li>
+                <li>분쇄</li>
+                <li>불림</li>
+                <li>추출</li>
+            </ol>
+        </li>
+        <li>커피 드립 순서 - 알파벳 소문자
+            <ol type="a">
+                <li>필터접기</li>
+                <li>분쇄</li>
+                <li>불림</li>
+                <li>추출</li>
+            </ol>
+        </li>
+    </ul>
+    <hr>
+    <table>
+        <caption><b>주요 SNS 서비스별 이용률(%)</b></caption>
+        <tr>
+            <th></th>
+            <th>페이스북</th>
+            <th>카카오스토리</th>
+            <th>밴드</th>
+            <th>인스타그램</th>
+            <th>트위터</th>
+        </tr>
+        <tr>
+            <th>2015년</th>
+            <td>77.1</td>
+            <td>58.3</td>
+            <td>32.4</td>
+            <td>16.7</td>
+            <td>22.1</td>
+        </tr>
+        <tr>
+            <th>2016년</th>
+            <td>73.8</td>
+            <td>51.0</td>
+            <td>40.1</td>
+            <td>28.1</td>
+            <td>14.7</td>
+        </tr>
+    </table>
+</body>
+</html>
